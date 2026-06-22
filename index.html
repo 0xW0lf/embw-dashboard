@@ -5,72 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EMBW Toolkit</title>
 
-  <!-- ✅ Tabler CSS (CDN) -->
   <link href="https://cdn.jsdelivr.net/npm/@tabler/core@latest/dist/css/tabler.min.css" rel="stylesheet"/>
 </head>
 
-<body>
+<body data-bs-theme="dark">
+
 <div class="page">
 
-  <!-- ✅ SIDEBAR -->
-  <aside class="navbar navbar-vertical navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
+  <!-- ✅ TOP NAVBAR -->
+  <header class="navbar navbar-expand-md navbar-dark d-print-none">
+    <div class="container-xl">
 
+      <!-- ✅ LOGO -->
       <h1 class="navbar-brand text-white">
-        EMBW Toolkit
+        EMBW
       </h1>
 
-      <ul class="navbar-nav">
+      <!-- ✅ MENU TOGGLE (mobile) -->
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <li class="nav-item">
+      <!-- ✅ TOP MENU -->
+      <div class="collapse navbar-collapse" id="navbar-menu">
+        <div class="navbar-nav ms-auto">
+
           <a class="nav-link active" href="#">
             🏠 Dashboard
           </a>
-        </li>
 
-        <li class="nav-item">
           <a class="nav-link" href="#">
             🌐 Domain Lookup
           </a>
-        </li>
 
-        <li class="nav-item">
           <a class="nav-link" href="#">
             🌍 IP Lookup
           </a>
-        </li>
 
-        <li class="nav-item">
           <a class="nav-link" href="#">
             🚨 Risk Checker
           </a>
-        </li>
 
-      </ul>
+        </div>
+      </div>
     </div>
-  </aside>
+  </header>
 
-  <!-- ✅ MAIN CONTENT -->
+  <!-- ✅ PAGE CONTENT -->
   <div class="page-wrapper">
 
-    <!-- HEADER -->
     <div class="page-header">
       <div class="container-xl">
-        <h2 class="page-title">
-          Dashboard
-        </h2>
+        <h2 class="page-title">Security Toolkit</h2>
       </div>
     </div>
 
-    <!-- BODY -->
     <div class="page-body">
       <div class="container-xl">
 
         <div class="row g-4">
 
-          <!-- CARD 1 -->
+          <!-- TOOL CARD -->
           <div class="col-md-4">
-            <div class="card">
+            <div class="card card-sm">
               <div class="card-body">
                 <h3 class="card-title">🌐 Domain Lookup</h3>
                 <p>Perform DNS lookups and retrieve domain records.</p>
@@ -79,9 +76,9 @@
             </div>
           </div>
 
-          <!-- CARD 2 -->
+          <!-- TOOL CARD -->
           <div class="col-md-4">
-            <div class="card">
+            <div class="card card-sm">
               <div class="card-body">
                 <h3 class="card-title">🌍 IP Lookup</h3>
                 <p>View geolocation, organisation and ASN data.</p>
@@ -90,9 +87,9 @@
             </div>
           </div>
 
-          <!-- CARD 3 -->
+          <!-- TOOL CARD -->
           <div class="col-md-4">
-            <div class="card">
+            <div class="card card-sm">
               <div class="card-body">
                 <h3 class="card-title">🚨 Risk Checker</h3>
                 <p>Analyse sign-in risk using IP intelligence.</p>
@@ -109,7 +106,6 @@
   </div>
 </div>
 
-<!-- ✅ Tabler JS (CDN) -->
 <script src="https://cdn.jsdelivr.net/npm/@tabler/core@latest/dist/js/tabler.min.js"></script>
 
 </body>
